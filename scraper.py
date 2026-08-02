@@ -43,7 +43,10 @@ def browser_headers(ua_index: int = 0) -> dict:
         "User-Agent":                USER_AGENTS[ua_index % len(USER_AGENTS)],
         "Accept":                    "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
         "Accept-Language":           "en-US,en;q=0.9",
-        "Accept-Encoding":           "gzip, deflate, br",
+        # NOTE: Do NOT set Accept-Encoding manually.
+        # requests sets it automatically AND handles decompression.
+        # Setting it manually sends the header but skips auto-decompress,
+        # resulting in raw binary brotli/gzip in resp.text.
         "Connection":                "keep-alive",
         "Upgrade-Insecure-Requests": "1",
         "Sec-Fetch-Dest":            "document",
