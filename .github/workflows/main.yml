@@ -1,0 +1,51 @@
+name: AnimeGG Scraper
+
+on:
+  workflow_dispatch:        # run manually from Actions tab
+  schedule:
+    - cron: "0 0 * * 0"    # every Sunday at midnight UTC (optional)
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360    # 6 hours — enough for 11k series detail pages
+
+    permissions:
+      contents: write       # needed to push commits back to the repo
+
+    steps:
+      # ── 1. Checkout ──────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── 2. Python setup ──────────────────────────────────────────────────────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      # ── 3. Configure git identity for commits ────────────────────────────────
+      - name: Configure git
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      # ── 4. Run scraper ───────────────────────────────────────────────────────
+      - name: Run scraper
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python scraper.py
+
+      # ── 5. Final commit (catches anything not committed mid-run) ─────────────
+      - name: Final commit
+        run: |
+          git add animegg_url_list.json animegg_with_alternate_titles.json || true
+          git diff --cached --quiet || git commit -m "scraper: final save [skip ci]"
+          git push || true
