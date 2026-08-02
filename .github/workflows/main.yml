@@ -1,51 +1,61 @@
 name: AnimeGG Scraper
 
 on:
-  workflow_dispatch:        # run manually from Actions tab
+  workflow_dispatch:
   schedule:
-    - cron: "0 0 * * 0"    # every Sunday at midnight UTC (optional)
+    - cron: "0 0 * * 0"   # every Sunday midnight UTC
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 360    # 6 hours — enough for 11k series detail pages
+    timeout-minutes: 360   # 6 hours
 
     permissions:
-      contents: write       # needed to push commits back to the repo
+      contents: write
 
     steps:
-      # ── 1. Checkout ──────────────────────────────────────────────────────────
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # ── 2. Python setup ──────────────────────────────────────────────────────
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: pip install requests beautifulsoup4 lxml
 
-      # ── 3. Configure git identity for commits ────────────────────────────────
       - name: Configure git
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      # ── 4. Run scraper ───────────────────────────────────────────────────────
+      # Quick connectivity check — tells us immediately if the IP is blocked
+      - name: Connectivity check
+        run: |
+          echo "=== curl animegg.org/popular-series (first 3000 chars) ==="
+          curl -sL \
+            -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36" \
+            -H "Accept: text/html" \
+            -H "Accept-Language: en-US,en;q=0.9" \
+            "https://www.animegg.org/popular-series?sortBy=hits&sortDirection=DESC&limit=5&start=0" \
+            | head -c 3000
+          echo ""
+          echo "=== HTTP status ==="
+          curl -o /dev/null -s -w "%{http_code}" \
+            -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36" \
+            "https://www.animegg.org/popular-series?sortBy=hits&sortDirection=DESC&limit=5&start=0"
+          echo ""
+
       - name: Run scraper
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
         run: python scraper.py
 
-      # ── 5. Final commit (catches anything not committed mid-run) ─────────────
-      - name: Final commit
+      - name: Final commit (safety net)
+        if: always()
         run: |
-          git add animegg_url_list.json animegg_with_alternate_titles.json || true
+          git add animegg_url_list.json animegg_with_alternate_titles.json 2>/dev/null || true
           git diff --cached --quiet || git commit -m "scraper: final save [skip ci]"
           git push || true
