@@ -812,5 +812,798 @@
       "School"
     ],
     "description": "Yukihira Souma's dream is to become a full-time chef in his father's restaurant and surpass his father's culinary skill. But just as Yukihira graduates from middle schools his father, Yukihira..."
+  },
+  {
+    "serial_no": 51,
+    "title": "Fullmetal Alchemist",
+    "alternate_title": "Hagane no Renkinjutsushi, FMA, Full Metal Alchemist , 鋼の錬金術師",
+    "url": "https://www.animegg.org/series/fullmetal-alchemist",
+    "episode_count": 51,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Fantasy",
+      "Magic",
+      "Shounen",
+      "Angst",
+      "Violence",
+      "Parallel Universe"
+    ],
+    "description": "After losing their mother, Alphonse and Edward Elric attempt to bring her back using the forbidden science of human alchemy. However, alchemy operates on the theory of equivalent trade, and breaking..."
+  },
+  {
+    "serial_no": 52,
+    "title": "One Punch Man 2nd Season",
+    "alternate_title": "One Punch-Man 2, One-Punch Man 2, OPM 2",
+    "url": "https://www.animegg.org/series/one-punch-man-2nd-season",
+    "episode_count": 12,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Super Power",
+      "Supernatural",
+      "Comedy",
+      "Seinen",
+      "Parody"
+    ],
+    "description": "The second season of One Punch Man."
+  },
+  {
+    "serial_no": 53,
+    "title": "Inazuma Eleven",
+    "alternate_title": "イナズマイレブン",
+    "url": "https://www.animegg.org/series/inazuma-eleven",
+    "episode_count": 126,
+    "status": "Completed",
+    "genres": [
+      "Super Power",
+      "Shounen",
+      "Sports"
+    ],
+    "description": "The main character, Endou Mamoru, is a very talented goalkeeper and the grandson of one of the strongest goalkeepers in Japan, who died before he was born. Even though his skills are incredible his..."
+  },
+  {
+    "serial_no": 54,
+    "title": "Yu-Gi-Oh! Zexal",
+    "alternate_title": "Yugioh, Yuu Gi Ou! Zexal, Yu-Gi-Oh! Zeal ，遊☆戯☆王ZEXAL",
+    "url": "https://www.animegg.org/series/yu-gi-oh-zexal",
+    "episode_count": 146,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Game",
+      "Shounen"
+    ],
+    "description": "The story takes place in the near future in a city called Heartland. Tsukumo Yuma is a young duelist who strives to become the Duel Monsters champion, despite being an amateur. One day, during a duel..."
+  },
+  {
+    "serial_no": 55,
+    "title": "D.Gray-man",
+    "alternate_title": "D.Gray-man,D. Gray-man, D. Grey-man,ディー・グレイマン",
+    "url": "https://www.animegg.org/series/dgray-man",
+    "episode_count": 103,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "Towards the end of the 19th century, Allen Walker officially joins the organization of Exorcists that destroy the beings known as Akuma; mechanic weapons made by the Millennium Earl with the suffering..."
+  },
+  {
+    "serial_no": 56,
+    "title": "Dragon Ball Kai (2014)",
+    "alternate_title": "ドラゴンボール改, Dragonball Kai, DBK, DB Kai, DBZ Kai, Dragon Ball Z Kai The Final Chapters",
+    "url": "https://www.animegg.org/series/dragon-ball-kai-2014",
+    "episode_count": 61,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Martial Arts",
+      "Fantasy",
+      "Super Power",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "Remastered version of the Majin Buu saga that adheres more to the manga's story."
+  },
+  {
+    "serial_no": 57,
+    "title": "Beelzebub",
+    "alternate_title": "べるぜバブ",
+    "url": "https://www.animegg.org/series/beelzebub",
+    "episode_count": 60,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Demons",
+      "Supernatural",
+      "Comedy",
+      "Shounen",
+      "School"
+    ],
+    "description": "The story follows the \"strongest juvenile delinquent\", Oga Tatsumi, a first year in \"Ishiyama High\" the school for delinquents. One day while sleeping next to a river he sees a man floating down it..."
+  },
+  {
+    "serial_no": 58,
+    "title": "Dragon Ball GT",
+    "alternate_title": "Dragonball GT,ドラゴンボールGT",
+    "url": "https://www.animegg.org/series/dragonball-gt",
+    "episode_count": 64,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Adventure",
+      "Fantasy",
+      "Magic",
+      "Super Power",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "Goku, the hero who destroyed the evil of Frieza, Cell, and Buu in DBZ, learns that an old foe, Emperor Pilaf from DB has captured the 7 magical Black Star Dragon Balls, which, at the cost of the..."
+  },
+  {
+    "serial_no": 59,
+    "title": "Yu-Gi-Oh! 5D",
+    "alternate_title": "Yuugioh Faibudiizu, Yuu Gi Ou: Duel Monsters 5DS, Yugioh 5 D's， 遊戯王ファイブディーズ",
+    "url": "https://www.animegg.org/series/yu-gi-oh-5d",
+    "episode_count": 153,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Game",
+      "Shounen"
+    ],
+    "description": "Many years in the future after the exploits of Yugi Mutou, Domino City has become a shadow of its former self: Neo Domino City. There lies a strong divide between the rich and the poor, and bridging..."
+  },
+  {
+    "serial_no": 60,
+    "title": "Tokyo Ghoul",
+    "alternate_title": "東京喰種-トーキョーグール-",
+    "url": "https://www.animegg.org/series/tokyo-kushu",
+    "episode_count": 12,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Drama",
+      "Supernatural",
+      "Mystery",
+      "Horror",
+      "Psychological"
+    ],
+    "description": "Tokyo is haunted by mysterious ghouls who are devouring humans. People are gripped by the fear of these ghouls whose identities are masked in mystery. An ordinary college student named Kaneki..."
+  },
+  {
+    "serial_no": 61,
+    "title": "Soul Eater",
+    "alternate_title": "oul Eater, ソウルイーター",
+    "url": "https://www.animegg.org/series/soul-eater",
+    "episode_count": 51,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Supernatural",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "Set in the Shinigami technical school for weapon meisters, the series revolves around 3 groups of each a weapon meister and a human weapon. Trying to make the latter a \"Death Scythe\" and thus fit for..."
+  },
+  {
+    "serial_no": 62,
+    "title": "Haikyuu!! Second Season",
+    "alternate_title": "ハイキュー!! セカンドシーズン",
+    "url": "https://www.animegg.org/series/haikyuu-second-season",
+    "episode_count": 25,
+    "status": "Completed",
+    "genres": [
+      "Drama",
+      "Comedy",
+      "Shounen",
+      "School",
+      "Sports"
+    ],
+    "description": "The second season of Haikyuu!!\r\n\r\nAfter losing against Aoba Jousai, the whole Karasuno team feels at a loss. Especially Kageyama and Hinata, who seem to be the most devastated about the defeat..."
+  },
+  {
+    "serial_no": 63,
+    "title": "Pokemon Sun & Moon",
+    "alternate_title": "Pocket Monsters Sun & Moon, Pokémon Sun & Moon, ポケットモンスター サン＆ムーン",
+    "url": "https://www.animegg.org/series/pokemon-sun-moon",
+    "episode_count": 146,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Game",
+      "School",
+      "Kids"
+    ],
+    "description": "Satoshi and his Pikachu head off to a new region, Alola, wearing a new set of clothes. He receives a Z-Ring and becomes a student at a school."
+  },
+  {
+    "serial_no": 64,
+    "title": "Akame ga Kill!",
+    "alternate_title": "Akame ga Kiru!, アカメが斬る！",
+    "url": "https://www.animegg.org/series/akame-ga-kill",
+    "episode_count": 24,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "description": "In a fantasy world, fighter Tatsumi sets out for the Capitol to earn money for his starving village, and finds a world of unimaginable corruption, all spreading from the depraved Prime Minister who..."
+  },
+  {
+    "serial_no": 65,
+    "title": "Ansatsu Kyoushitsu (TV)",
+    "alternate_title": "Assassination Classroom, 暗殺教室",
+    "url": "https://www.animegg.org/series/ansatsu-kyoushitsu-tv",
+    "episode_count": 22,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Supernatural",
+      "Comedy",
+      "Shounen",
+      "School"
+    ],
+    "description": "The students of class 3-E have a mission: kill their teacher before graduation. He has already destroyed the moon, and has promised to destroy the Earth if he can not be killed within a year. But how..."
+  },
+  {
+    "serial_no": 66,
+    "title": "YouKai Watch",
+    "alternate_title": "妖怪ウォッチ",
+    "url": "https://www.animegg.org/series/yokai-watch",
+    "episode_count": 125,
+    "status": "Completed",
+    "genres": [
+      "Game"
+    ],
+    "description": "Level-5's adaption of their new upcoming 3DS game."
+  },
+  {
+    "serial_no": 67,
+    "title": "Urusei Yatsura",
+    "alternate_title": "Lamu, Lum, Those Obnoxious Aliens ,うる星やつら",
+    "url": "https://www.animegg.org/series/urusei-yatsura",
+    "episode_count": 195,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Adventure",
+      "Drama",
+      "Comedy",
+      "Romance"
+    ],
+    "description": "In this out-of-this-world anime comedy series, notoriously unlucky Ataru Moroboshi is chosen at random by aliens and told that only he can save Earth by defeating their sexy princess, Lum, in a game..."
+  },
+  {
+    "serial_no": 68,
+    "title": "History's Strongest Disciple Kenichi",
+    "alternate_title": "hijou Saikyou no Deshi Kenichi,History's Strongest Disciple Kenichi,史上最強の弟子 ケンイチ (Shijō Saikyō no Deshi: Kenichi)",
+    "url": "https://www.animegg.org/series/historys-strongest-disciple-kenichi",
+    "episode_count": 50,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Martial Arts",
+      "Ecchi",
+      "Comedy",
+      "Shounen",
+      "High School",
+      "School Life",
+      "Slapstick",
+      "Delinquents"
+    ],
+    "description": "\"Weak Legs\" Kenichi Shirahama would rather spend his time reading self improvement books than fighting. However, when he finally works up the courage to become strong and join his school's karate club..."
+  },
+  {
+    "serial_no": 69,
+    "title": "Slam Dunk",
+    "alternate_title": "スラムダンク",
+    "url": "https://www.animegg.org/series/slam-dunk",
+    "episode_count": 101,
+    "status": "Completed",
+    "genres": [
+      "Drama",
+      "Comedy",
+      "Shounen",
+      "School",
+      "Sports"
+    ],
+    "description": "Sakuragi Hanamichi is a junior high punk used to getting into fights and being rejected by girls but upon entering high school he meets the girl of his dreams, Haruko Akagi. He will do anything in..."
+  },
+  {
+    "serial_no": 70,
+    "title": "Zatch Bell",
+    "alternate_title": "Konjiki no Gash Bell!!,Zatch Bell!,金色のガッシュベル!!",
+    "url": "https://www.animegg.org/series/zatch-bell",
+    "episode_count": 150,
+    "status": "Completed",
+    "genres": [
+      "Adventure",
+      "Supernatural",
+      "Shounen"
+    ],
+    "description": "Takamine Kiyomaro, a depressed don't-care-about-the-world guy, was suddenly given a little demon named Gash Bell to take care of. Little does he know that Gash is embroiled into an intense fight to..."
+  },
+  {
+    "serial_no": 71,
+    "title": "High School DxD BorN",
+    "alternate_title": "High School DxD Third Season, High School DxD 3rd Season, Highschool DxD BorN, ハイスクールD×D BorN",
+    "url": "https://www.animegg.org/series/high-school-dxd-born",
+    "episode_count": 14,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Demons",
+      "Ecchi",
+      "Comedy",
+      "Shounen",
+      "School",
+      "Romance",
+      "Harem"
+    ],
+    "description": "The third season of High School DxD based on the light novel series by Ichiei Ishibumi."
+  },
+  {
+    "serial_no": 72,
+    "title": "Tensei shitara Slime Datta Ken",
+    "alternate_title": "That Time I Got Reincarnated as a Slime",
+    "url": "https://www.animegg.org/series/tensei-shitara-slime-datta-ken",
+    "episode_count": 24,
+    "status": "Completed",
+    "genres": [
+      "Fantasy"
+    ],
+    "description": "\"Rimuru Tempest\" is the new name of a slime in a fantasy world taken by a former 37-year-old human Satou Mikami after he is killed by a passing robber. Broken free from ordinary, stale past life, his..."
+  },
+  {
+    "serial_no": 73,
+    "title": "Ace of The Diamond",
+    "alternate_title": "Diamond no Ace, Daiya no Ace,Ace of the Diamond, Ace of Diamond, ダイヤのA[エース]",
+    "url": "https://www.animegg.org/series/ace-of-the-diamond",
+    "episode_count": 76,
+    "status": "Completed",
+    "genres": [
+      "Comedy",
+      "Shounen",
+      "School",
+      "Sports"
+    ],
+    "description": "The story follows Eijun Sawamura, a pitcher who joins an elite school with a brilliant catcher named Kazuya Miyuki. Together with the rest of the team, they strive for Japan's storied Koushien..."
+  },
+  {
+    "serial_no": 74,
+    "title": "Haikyuu!!",
+    "alternate_title": "ハイキュー!!",
+    "url": "https://www.animegg.org/series/haikyuu",
+    "episode_count": 25,
+    "status": "Completed",
+    "genres": [
+      "Drama",
+      "Comedy",
+      "Shounen",
+      "School",
+      "Sports"
+    ],
+    "description": "A chance event triggered Shouyou Hinata's love for volleyball. His club had no members, but somehow persevered and finally made it into its very first and final regular match of middle school, where..."
+  },
+  {
+    "serial_no": 75,
+    "title": "Tokyo Ghoul 2nd Season",
+    "alternate_title": "Tokyo Ghoul √A, 東京喰種√A",
+    "url": "https://www.animegg.org/series/tokyo-ghoul-2nd-season",
+    "episode_count": 12,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Drama",
+      "Supernatural",
+      "Mystery",
+      "Seinen",
+      "Horror",
+      "Psychological"
+    ],
+    "description": "Second Season of Tokyo Ghoul series."
+  },
+  {
+    "serial_no": 76,
+    "title": "Tate no Yuusha no Nariagari",
+    "alternate_title": "The Rising of the Shield Hero",
+    "url": "https://www.animegg.org/series/tate-no-yuusha-no-nariagari",
+    "episode_count": 25,
+    "status": "Ongoing",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Fantasy",
+      "Comedy",
+      "Seinen",
+      "Romance"
+    ],
+    "description": "Stories of old tell of four otherworldly heroes—wielding the sword, spear, bow, and shield—who defended the land from wave after wave of calamity. With the fate of the world in balance, the kingdom of..."
+  },
+  {
+    "serial_no": 77,
+    "title": "Kuroko no Basket 3rd Season",
+    "alternate_title": "黒子のバスケ",
+    "url": "https://www.animegg.org/series/kuroko-no-basket-3rd-season",
+    "episode_count": 25,
+    "status": "Completed",
+    "genres": [
+      "Comedy",
+      "Shounen",
+      "School",
+      "Sports"
+    ],
+    "description": "The third season of Kuroko no Basket."
+  },
+  {
+    "serial_no": 78,
+    "title": "Kuroko no Basket",
+    "alternate_title": "Kuroko's Basketball, Kuroko no Basuke, 黒子のバスケ",
+    "url": "https://www.animegg.org/series/kuroko-no-basket",
+    "episode_count": 25,
+    "status": "Completed",
+    "genres": [
+      "Comedy",
+      "Shounen",
+      "School",
+      "Sports"
+    ],
+    "description": "Kuroko is a member from the legendary middle school basketball team known as \"The Generation of Miracles\", and while nobody seems to know about him, the main 5 players of the team all admit that he is..."
+  },
+  {
+    "serial_no": 79,
+    "title": "Attack on Titan Season 2",
+    "alternate_title": "hingeki no Kyojin Season 2, Shingeki no Kyojin 2, 進撃の巨人 Season 2",
+    "url": "https://www.animegg.org/series/attack-on-titan-season-2",
+    "episode_count": 12,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy",
+      "Super Power",
+      "Shounen"
+    ],
+    "description": "Second season of Shingeki no Kyojin."
+  },
+  {
+    "serial_no": 80,
+    "title": "Re:Zero kara Hajimeru Isekai Seikatsu",
+    "alternate_title": "Re:ZERO -Starting Life in Another World-, Re: Life in a different world from zero, ReZero, Re：ゼロから始める異世界生活",
+    "url": "https://www.animegg.org/series/rezero-kara-hajimeru-isekai-seikatsu",
+    "episode_count": 25,
+    "status": "Ongoing",
+    "genres": [
+      "Drama",
+      "Fantasy"
+    ],
+    "description": "Suddenly, high school student Subaru Natsuki has been summoned to another world on the way back from the convenience store. With the biggest crisis of his life being summoned to another world, and..."
+  },
+  {
+    "serial_no": 81,
+    "title": "Saint Seiya",
+    "alternate_title": "Knights of the Zodiac, Zodiac Knights,聖闘士星矢(セイントセイヤ)",
+    "url": "https://www.animegg.org/series/saint-seiya",
+    "episode_count": 114,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Shounen"
+    ],
+    "description": "Ages ago,the goddess Athena was served by fighters called Saints who channeled the power of the Cosmos within them. Now a youth named Seiya has trained to become a Saint himself by earning the..."
+  },
+  {
+    "serial_no": 82,
+    "title": "Kiseijuu: Sei no Kakuritsu",
+    "alternate_title": "Parasyte - the maxim, Parasyte -the maxim-, Parasite, Parasitic Beasts, Parasyte, 寄生獣 セイの格率",
+    "url": "https://www.animegg.org/series/kiseijuu-sei-no-kakuritsu",
+    "episode_count": 24,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Drama",
+      "Seinen",
+      "Horror",
+      "Psychological"
+    ],
+    "description": "Based on Iwaaki Hitoshi's science-fiction horror manga by the same name.\r\n\r\nThe 17-year-old Izumi Shinichi lives with his mother and father in a quiet neighborhood in Tokyo. One night, worm-like..."
+  },
+  {
+    "serial_no": 83,
+    "title": "Kuroko no Basket 2nd Season",
+    "alternate_title": "Kuroko's Basketball 2, Kuroko no Basuke 2nd Season, 黒子のバスケ",
+    "url": "https://www.animegg.org/series/kuroko-no-basket-2",
+    "episode_count": 25,
+    "status": "Completed",
+    "genres": [
+      "Drama",
+      "Comedy",
+      "Shounen",
+      "Sports"
+    ],
+    "description": "The second season of Kuroko no Basket."
+  },
+  {
+    "serial_no": 84,
+    "title": "Bonobono (2016)",
+    "alternate_title": "Bono Bono, ぼのぼの",
+    "url": "https://www.animegg.org/series/bonobono-2016",
+    "episode_count": 154,
+    "status": "Completed",
+    "genres": [
+      "Comedy"
+    ],
+    "description": "A sea otter and his friends, a raccoon and squirrel, live and play together in the forest."
+  },
+  {
+    "serial_no": 85,
+    "title": "Legend of the Galactic Heroes",
+    "alternate_title": "Legend of the Galactic Heroes, LoGH, LotGH, Gin'eiden, GinEiDen, Heldensagen Vom Kosmosinsel , 銀河英雄伝説",
+    "url": "https://www.animegg.org/series/legend-of-the-galactic-heroes",
+    "episode_count": 110,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Drama",
+      "Military"
+    ],
+    "description": "For decades, the Galactic Empire has been locked in an interstellar war with the Free Planets Alliance, a conflict that involves thousands of spaceships and millions of soldiers on both sides. Two new..."
+  },
+  {
+    "serial_no": 86,
+    "title": "Lupin III Series 2",
+    "alternate_title": "Rupan Sansei: Part II, Shin Lupin III, Lupin III: Greatest Capers , 新・ルパン三世",
+    "url": "https://www.animegg.org/series/lupin-iii-series-2",
+    "episode_count": 155,
+    "status": "Completed",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "Second part of Lupin III. Lupin III chronicles the adventures of Arsene Lupin III, the world's greatest thief, and his partners in crime: master marksman Daisuke Jigen, beautiful and scheming Fujiko..."
+  },
+  {
+    "serial_no": 87,
+    "title": "Ao no Exorcist",
+    "alternate_title": "Blue Exorcist,,青の祓魔師(エクソシスト)",
+    "url": "https://www.animegg.org/series/aono-exorcist",
+    "episode_count": 26,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Demons",
+      "Fantasy",
+      "Supernatural",
+      "Shounen"
+    ],
+    "description": "The story focuses on Rin Okumura, a boy raised by a famous exorcist named Father Fujimoto. After an argument between the two, Rin discovers he is the son of Satan. Rin decides to fight his fate y..."
+  },
+  {
+    "serial_no": 88,
+    "title": "Hunter X Hunter",
+    "alternate_title": "HxH ，ハンターxハンター",
+    "url": "https://www.animegg.org/series/hunter-x-hunter",
+    "episode_count": 62,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Martial Arts",
+      "Super Power",
+      "Shounen",
+      "Violence"
+    ],
+    "description": "Synopsis\r\nA Hunter is one who travels the world doing all sorts of dangerous tasks. From capturing criminals to searching deep within uncharted lands for any lost treasures. Gon is a young boy whose..."
+  },
+  {
+    "serial_no": 89,
+    "title": "Shaman King",
+    "alternate_title": "haman King, シャーマンキング",
+    "url": "https://www.animegg.org/series/shaman-king",
+    "episode_count": 64,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Magic",
+      "Super Power",
+      "Comedy",
+      "Shounen",
+      "Samurai",
+      "Violence",
+      "Swordplay"
+    ],
+    "description": "Asakura Yoh is a shaman, one who can see and communicate with spirits. Yoh is training to become the Shaman King, strongest among all the Shamans. The ones helping him are Manta, a short boy who can..."
+  },
+  {
+    "serial_no": 90,
+    "title": "Gintama' (2015)",
+    "alternate_title": "銀魂°",
+    "url": "https://www.animegg.org/series/gintama-2015",
+    "episode_count": 51,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Comedy",
+      "Shounen",
+      "Historical",
+      "Parody",
+      "Samurai"
+    ],
+    "description": "The Gintama event at Jump Festa 2015 announced on Sunday that a new television anime series has been green-lit. The new series will premiere on TV Tokyo and its affiliates in April 2015."
+  },
+  {
+    "serial_no": 91,
+    "title": "High School DxD New",
+    "alternate_title": "High School DxD Dai 2-ki, High School DxD 2nd Season, High School DxD Second Season, High School DxD OVA, Highschool DxD 2,High School DxD Episodes 13, 14 and 15, ハイスクールD×D NEW, ハイスクールD×D OVA",
+    "url": "https://www.animegg.org/series/high-school-dxd-new",
+    "episode_count": 12,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Demons",
+      "Ecchi",
+      "Comedy",
+      "Shounen",
+      "School",
+      "Romance",
+      "Harem"
+    ],
+    "description": "The devilish haremking Issei Hyoudou is back for more outrageous Oppai Battle Entertainment in the scintillating second season of High School DxD! Fans who like their hardcore action spiked with a..."
+  },
+  {
+    "serial_no": 92,
+    "title": "Overlord",
+    "alternate_title": "オーバーロード",
+    "url": "https://www.animegg.org/series/overlord",
+    "episode_count": 13,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Fantasy"
+    ],
+    "description": "The story begins with Yggdrasil, a popular online game which is quietly shut down one day; however, the protagonist Momonga decides to not log out. Momonga is then transformed into the image of a..."
+  },
+  {
+    "serial_no": 93,
+    "title": "Aikatsu!",
+    "alternate_title": "Aikatsu! Idol Katsudou! Idol ga Tsudou!, Aidoru ga Tsudou!, Aikatsu! 2, Idol ga Tsudou! 2,アイカツ! アイドルカツドウ!",
+    "url": "https://www.animegg.org/series/aikatsu",
+    "episode_count": 102,
+    "status": "Completed",
+    "genres": [
+      "Shoujo",
+      "School",
+      "Slice of Life",
+      "Music"
+    ],
+    "description": "Ichigo Hoshimiya is a regular, ordinary middle school girl. But when her best friend, Aoi, invites her to join the idol training academy, Starlight Academy, her whole world is turned upside down. As..."
+  },
+  {
+    "serial_no": 94,
+    "title": "Sousei no Onmyouji",
+    "alternate_title": "Twin Star Exorcists, 双星の陰陽師",
+    "url": "https://www.animegg.org/series/sousei-no-onmyouji",
+    "episode_count": 50,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Supernatural",
+      "Shounen"
+    ],
+    "description": "Rokuro is from a family of exorcists, but he'd rather be a singer, a soccer player or anything but an exorcist! He's forced to own up to his own incredible potential when new arrival Benio stirs his..."
+  },
+  {
+    "serial_no": 95,
+    "title": "Ace of Diamond: Second Season",
+    "alternate_title": "Diamond no Ace: Second Season, Daiya no Ace: Second Season, Ace of the Diamond: Second Season, ダイヤのA[エース]～Second Season～",
+    "url": "https://www.animegg.org/series/ace-of-diamond-second-season",
+    "episode_count": 51,
+    "status": "Completed",
+    "genres": [
+      "Comedy",
+      "Shounen",
+      "School",
+      "Sports"
+    ],
+    "description": "Second season of Diamond no Ace."
+  },
+  {
+    "serial_no": 96,
+    "title": "Dr. Stone",
+    "alternate_title": "ドクターストーン",
+    "url": "https://www.animegg.org/series/dr-stone",
+    "episode_count": 24,
+    "status": "Ongoing",
+    "genres": [
+      "Sci-Fi",
+      "Adventure",
+      "Shounen"
+    ],
+    "description": "One fateful day, all of humanity was petrified by a blinding flash of light. After several millennia, high schooler Taiju awakens and finds himself lost in a world of statues. However, he’s not alone..."
+  },
+  {
+    "serial_no": 97,
+    "title": "Dragon Quest: Dai no Daibouken (2020)",
+    "alternate_title": "Dragon Quest: Dai's Great Adventure, Dragon Quest: Adventure of Dai",
+    "url": "https://www.animegg.org/series/dragon-quest-dai-no-daibouken-2020",
+    "episode_count": 100,
+    "status": "Ongoing",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Shounen"
+    ],
+    "description": "A long time ago, there was a valiant swordsman who came to be known simply as \"the hero.\" There was a demon who has caused people suffering. The hero and his companions arrived to challenge the demon..."
+  },
+  {
+    "serial_no": 98,
+    "title": "Pokemon XY&Z",
+    "alternate_title": "Pokémon The Series: XY, ポケットモンスターXY",
+    "url": "https://www.animegg.org/series/pokemon-xy-z",
+    "episode_count": 49,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Comedy",
+      "Kids"
+    ],
+    "description": "Continuation of Pokemon XY"
+  },
+  {
+    "serial_no": 99,
+    "title": "JoJo's Bizarre Adventure Part 4: Diamond Is Unbreakable",
+    "alternate_title": "JoJo no Kimyou na Bouken Part 4: Diamond wa Kudakenai, JoJo's Bizarre Adventure Part 4: Diamond Is Unbreakable, Diamond Is Not Crash, Dai 4 Bu: Higashikata Jousuke, ジョジョの奇妙な冒険 ダイヤモンドは砕けない",
+    "url": "https://www.animegg.org/series/jojos-bizarre-adventure-part-4-diamond-is-unbreakable",
+    "episode_count": 39,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Shounen"
+    ],
+    "description": "Fourth story arc of JoJo no Kimyou na Bouken series.\r\n\r\nThe coastal town of Morioh is plagued by the \"Bow and Arrow,\" an ancient artifact which manifests latent stand abilities in criminals and..."
+  },
+  {
+    "serial_no": 100,
+    "title": "Shingeki no Kyojin: The Final Season",
+    "alternate_title": "Attack on Titan Final Season, Shingeki no Kyojin Season 4",
+    "url": "https://www.animegg.org/series/shingeki-no-kyojin-the-final-season",
+    "episode_count": 16,
+    "status": "Ongoing",
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy",
+      "Military",
+      "Super Power",
+      "Shounen",
+      "Mystery"
+    ],
+    "description": "Final Season of Shingeki no Kyojin."
   }
 ]
