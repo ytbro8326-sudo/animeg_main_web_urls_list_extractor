@@ -1,1 +1,816 @@
-
+[
+  {
+    "serial_no": 1,
+    "title": "One Piece",
+    "alternate_title": "ワンピース",
+    "url": "https://www.animegg.org/series/one-piece",
+    "episode_count": 1160,
+    "status": "Ongoing",
+    "genres": [
+      "Slice of Life"
+    ],
+    "description": "Plot Summary: Before he was executed, the legendary Pirate King Gold Roger revealed that he had hidden the treasure One Piece somewhere in the Grand Line. Now, many pirates are off looking for this..."
+  },
+  {
+    "serial_no": 2,
+    "title": "Naruto Shippuden",
+    "alternate_title": "Naruto: Shippuuden, ナルト- 疾風伝.Naruto Shippuuden",
+    "url": "https://www.animegg.org/series/naruto-shippuden",
+    "episode_count": 500,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Martial Arts",
+      "Super Power",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "It has been two and a half years since Naruto Uzumaki left Konohagakure, the Hidden Leaf Village, for intense training following events which fueled his desire to be stronger. Now Akatsuki, the..."
+  },
+  {
+    "serial_no": 3,
+    "title": "Detective Conan",
+    "alternate_title": "Case Closed, Meitantei Conan, 名探偵コナン",
+    "url": "https://www.animegg.org/series/detectiveconan",
+    "episode_count": 1182,
+    "status": "Ongoing",
+    "genres": [
+      "Adventure"
+    ],
+    "description": "Shinichi Kudou, a high school student of astounding talent in detective work, is well known for having solved several challenging cases. One day, when Shinichi spots two suspicious men and decides to..."
+  },
+  {
+    "serial_no": 4,
+    "title": "Bleach",
+    "alternate_title": "Bleach , ブリーチ",
+    "url": "https://www.animegg.org/series/bleach",
+    "episode_count": 366,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Super Power",
+      "Supernatural",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "Kurosaki Ichigo is not a regular 15 year old, because he has always had the ability to see spirits and ghosts. One day, a female Shinigami (God of Death) named Kuchiki Rukia appears before him..."
+  },
+  {
+    "serial_no": 5,
+    "title": "Boruto: Naruto Next Generations",
+    "alternate_title": "BORUTO -NARUTO NEXT GENERATIONS-",
+    "url": "https://www.animegg.org/series/boruto-naruto-next-generations",
+    "episode_count": 294,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Martial Arts",
+      "Super Power",
+      "Shounen"
+    ],
+    "description": "Naruto was a young shinobi with an incorrigible knack for mischief. He achieved his dream to become the greatest ninja in the village and his face sits atop the Hokage monument. But this is not his..."
+  },
+  {
+    "serial_no": 6,
+    "title": "Dragon Ball Super",
+    "alternate_title": "Dragon Ball Chou, ドラゴンボール超（スーパー）",
+    "url": "https://www.animegg.org/series/dragon-ball-super",
+    "episode_count": 131,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Martial Arts",
+      "Fantasy",
+      "Super Power",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "Reuniting the franchise's iconic characters, Dragon Ball Super will follow the aftermath of Goku's fierce battle with Majin Buu as he attempts to maintain earth's fragile peace."
+  },
+  {
+    "serial_no": 7,
+    "title": "Naruto",
+    "alternate_title": "Naruto ,ナルト",
+    "url": "https://www.animegg.org/series/naruto",
+    "episode_count": 220,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Martial Arts",
+      "Super Power",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "Before Naruto was born, a great demon fox had attacked the Hidden Leaf Village. A man known as the 4th Hokage sealed the demon inside the newly born Naruto, causing him to unknowingly grow up detested..."
+  },
+  {
+    "serial_no": 8,
+    "title": "Fairy Tail",
+    "alternate_title": "フェアリーテイル",
+    "url": "https://www.animegg.org/series/fairy-tail",
+    "episode_count": 175,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Magic",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "Lucy is a 17-year-old girl, who wants to be a full-fledged mage. One day when visiting Harujion Town, she meets Natsu, a young man who gets sick easily by any type of transportation. But Natsu isnt..."
+  },
+  {
+    "serial_no": 9,
+    "title": "Black Clover (TV)",
+    "alternate_title": "Black Clover, ブラッククローバー",
+    "url": "https://www.animegg.org/series/black-clover-tv",
+    "episode_count": 170,
+    "status": "Ongoing",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Magic",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "Asta and Yuno were abandoned together at the same church and have been inseparable since. As children, they promised that they would compete against each other to see who would become the next Emperor..."
+  },
+  {
+    "serial_no": 10,
+    "title": "Dragon Ball Z",
+    "alternate_title": "DBZ, Dragonball Z ，ドラゴンボールZ",
+    "url": "https://www.animegg.org/series/dragonball-z",
+    "episode_count": 291,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Martial Arts",
+      "Fantasy",
+      "Super Power",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "Goku is back with his new son, Gohan, but just when things are getting settled down, the adventures continue. Whether he is facing enemies such as Frieza, Cell, or Buu, Goku is proven to be an elite..."
+  },
+  {
+    "serial_no": 11,
+    "title": "Hunter x Hunter (2011)",
+    "alternate_title": "HxH (2011), HUNTERxHUNTER (2011)",
+    "url": "https://www.animegg.org/series/hunter-x-hunter-2011",
+    "episode_count": 148,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Martial Arts",
+      "Super Power",
+      "Shounen",
+      "Violence"
+    ],
+    "description": "A new adaptation of the the manga series by Togashi Yoshihiro.\r\n\r\nA Hunter is one who travels the world doing all sorts of dangerous tasks. From capturing criminals to searching deep within uncharted..."
+  },
+  {
+    "serial_no": 12,
+    "title": "Fairy Tail (2014)",
+    "alternate_title": "フェアリーテイル, FAIRY TAIL（フェアリーテイル）, Fairy Tail Zero, FAIRY TAIL ZERØ",
+    "url": "https://www.animegg.org/series/fairy-tail-2014",
+    "episode_count": 102,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Magic",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "The story follows a teenage girl named Lucy Heartfilla who is determined to join the notorious magical Fairy Tail Guild. During a daring rescue, she encounters Natsu who is part of the guild and..."
+  },
+  {
+    "serial_no": 13,
+    "title": "Dragon Ball",
+    "alternate_title": "ドラゴンボール,dragonball",
+    "url": "https://www.animegg.org/series/dragon-ball",
+    "episode_count": 153,
+    "status": "Completed",
+    "genres": [
+      "Adventure",
+      "Martial Arts",
+      "Fantasy",
+      "Super Power",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "Bulma is a girl in search of the mystical dragonballs that when brought together grant any wish. In her search she bumps into the owner of one of these balls, a strange boy named Goku. The two then..."
+  },
+  {
+    "serial_no": 14,
+    "title": "Pokemon",
+    "alternate_title": "Pokémon, ポケットモンスター, Indigo League, Adventures on the Orange Islands, The Johto Journeys, Johto League Champions, Master Quest",
+    "url": "https://www.animegg.org/series/pokemon",
+    "episode_count": 469,
+    "status": "Ongoing",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Comedy",
+      "Kids"
+    ],
+    "description": "Pokemon are peculiar creatures with a vast array of different abilities and appearances; many people, known as Pokemon trainers, capture and train them, often with the intent of battling others. Young..."
+  },
+  {
+    "serial_no": 15,
+    "title": "Gintama",
+    "alternate_title": "Gin Tama, Silver Soul,銀魂",
+    "url": "https://www.animegg.org/series/gintama",
+    "episode_count": 263,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Fantasy",
+      "Comedy",
+      "Scifi"
+    ],
+    "description": "Life isn't easy in feudal Japan... especially since the aliens landed and conquered everything! Oh sure, the new health care is great, but the public ban on the use of swords has left a lot of..."
+  },
+  {
+    "serial_no": 16,
+    "title": "The Seven Deadly Sins",
+    "alternate_title": "Nanatsu no Taizai,The Seven, Seven Deadly Sins (TV), 七つの大罪",
+    "url": "https://www.animegg.org/series/the-seven-deadly-sins",
+    "episode_count": 24,
+    "status": "Ongoing",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Supernatural",
+      "Shounen"
+    ],
+    "description": "The \"Seven Deadly Sins,\" a group of evil knights who conspired to overthrow the kingdom of Britannia, were said to have been eradicated by the Holy Knights, although some claim that they still live..."
+  },
+  {
+    "serial_no": 17,
+    "title": "Inuyasha",
+    "alternate_title": "InuYasha, 犬夜叉",
+    "url": "https://www.animegg.org/series/inuyasha",
+    "episode_count": 164,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Martial Arts",
+      "Demons",
+      "Fantasy",
+      "Magic",
+      "Super Power",
+      "Comedy",
+      "Shounen",
+      "Romance",
+      "Violence",
+      "Swordplay",
+      "Slapstick",
+      "Juujin",
+      "Time Travel",
+      "Love Polygon"
+    ],
+    "description": "Higurashi Kagome, after being pulled down a well by a demon, finds herself in Feudal Japan, where she learns that a powerful jewel has been reborn inside her body. After the jewel shatters in an..."
+  },
+  {
+    "serial_no": 18,
+    "title": "Prince of Tennis",
+    "alternate_title": "Tennis no Ouji-sama,テニスの王子様",
+    "url": "https://www.animegg.org/series/prince-of-tennis",
+    "episode_count": 171,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Shounen",
+      "Sports",
+      "Middle School",
+      "School Life",
+      "Clubs",
+      "Tennis"
+    ],
+    "description": "Echizen Ryoma is a young tennis prodigy who has won 4 consecutive tennis championships but who constantly lies in the shadow of his father, a former pro tennis player. He joins the Seishun Gakuen..."
+  },
+  {
+    "serial_no": 19,
+    "title": "Attack on Titan",
+    "alternate_title": "hingeki no Kyojin, 進撃の巨人",
+    "url": "https://www.animegg.org/series/attack-on-titan",
+    "episode_count": 26,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy",
+      "Super Power"
+    ],
+    "description": "Several hundred years ago, humans were nearly exterminated by giants. Giants are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for..."
+  },
+  {
+    "serial_no": 20,
+    "title": "Yu-Gi-Oh!",
+    "alternate_title": "Yugioh, Yu-Gi-Oh!, Yu-Gi-Oh!: Duel Monsters, Yugioh: Duel Monsters,遊☆戯☆王　デュエルモンスターズ",
+    "url": "https://www.animegg.org/series/yu-gi-oh",
+    "episode_count": 224,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Comedy",
+      "Game",
+      "Shounen"
+    ],
+    "description": "Game loving Mutou Yugi was given an ancient relic by his grandfather called the Sennen (Thousand-Year) Puzzle. He completed the puzzle and was possessed by the spirit of an ancient Pharaoh. The..."
+  },
+  {
+    "serial_no": 21,
+    "title": "Fullmetal Alchemist: Brotherhood",
+    "alternate_title": "Hagane no Renkinjutsushi (2009), Fullmetal Alchemist (2009), FMA ,鋼の錬金術師",
+    "url": "https://www.animegg.org/series/full-metal-alchemist-brotherhood",
+    "episode_count": 64,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Fantasy",
+      "Magic",
+      "Military",
+      "Shounen",
+      "Violence"
+    ],
+    "description": "In this world there exist alchemists, people who study and perform the art of alchemical transmutation - to manipulate objects and transform one object into another. They are bounded by the basic law..."
+  },
+  {
+    "serial_no": 22,
+    "title": "Boku no Hero Academia 3rd Season",
+    "alternate_title": "My Hero Academia 3, 僕のヒーローアカデミア 3rdシーズン",
+    "url": "https://www.animegg.org/series/boku-no-hero-academia-3rd-season",
+    "episode_count": 25,
+    "status": "Ongoing",
+    "genres": [
+      "Action",
+      "Super Power",
+      "Comedy",
+      "Shounen",
+      "School"
+    ],
+    "description": "Third season of Boku no Hero Academia."
+  },
+  {
+    "serial_no": 23,
+    "title": "Folktales from Japan",
+    "alternate_title": "Furusato Saisei: Nihon no Mukashi Banashi, ふるさと再生 日本の昔ばなし",
+    "url": "https://www.animegg.org/series/folktales-from-japan",
+    "episode_count": 257,
+    "status": "Completed",
+    "genres": [
+      "Historical"
+    ],
+    "description": "Like in any culture, Japanese kids grow up listening to the stories repeatedly told by their parents and grandparents. The boy born from a peach; the princess from the moon who is discovered inside a..."
+  },
+  {
+    "serial_no": 24,
+    "title": "Pokemon XY",
+    "alternate_title": "Pokemon XY: Mega Evolution,Pokemon XY: Saikyou Mega Shinka, Pokemon XY Special Episode: The Strongest Mega Evolution - Act I, Pokemon XY Special Episode: The Strongest Mega Evolution - Act II, Pokemon Monsters XY Tokubetsu-hen ，ポケットモンスターXY MEGA EVOLUTION",
+    "url": "https://www.animegg.org/series/pokemon-xy",
+    "episode_count": 93,
+    "status": "Completed",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Comedy",
+      "Shounen",
+      "Kids"
+    ],
+    "description": "Satoshi and Pikachu will travel to Miare City at the center of the Kalos region.\r\nThere, they will encounter never-before-seen Pokémon and make new friends.\r\nThus begins a new adventure as Satoshi..."
+  },
+  {
+    "serial_no": 25,
+    "title": "Yu-Gi-Oh! Arc-V",
+    "alternate_title": "Yu☆Gi☆Oh! Arc-V, 遊☆戯☆王　アーク・ファイブ ARC-V",
+    "url": "https://www.animegg.org/series/yu-gi-oh-arc-v",
+    "episode_count": 148,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Game"
+    ],
+    "description": "The 5th Yu-Gi-Oh! series with an original storyline."
+  },
+  {
+    "serial_no": 26,
+    "title": "Boku no Hero Academia 2nd Season",
+    "alternate_title": "My Hero Academia 2, 僕のヒーローアカデミア 2ndシーズン",
+    "url": "https://www.animegg.org/series/boku-no-hero-academia-2nd-season",
+    "episode_count": 26,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Super Power",
+      "Comedy",
+      "Shounen",
+      "School"
+    ],
+    "description": "The second season of Boku no Hero Academia."
+  },
+  {
+    "serial_no": 27,
+    "title": "Yu Yu Hakusho",
+    "alternate_title": "Yuu Yuu Hakusho, Ghost Fighter, Yu Yu Hakusho - Ghostfiles, Poltergeist Report, YuYu Hakusho , 幽遊白書",
+    "url": "https://www.animegg.org/series/yu-yu-hakusho",
+    "episode_count": 112,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Drama",
+      "Supernatural",
+      "Comedy",
+      "Tournament"
+    ],
+    "description": "Urameshi Yusuke, 14 years of age, is constantly ditching school, causing trouble, and getting into numerous fights everyday. One day however, he does the unexpected, sacrificing himself to save a..."
+  },
+  {
+    "serial_no": 28,
+    "title": "Toriko",
+    "alternate_title": "Toriko (2011), Toriko (TV), Toriko x One Piece Collabo Special, トリコ",
+    "url": "https://www.animegg.org/series/toriko",
+    "episode_count": 147,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "In the world where the taste and texture of food are very important there is Toriko, a hunter of precious foods regularly hired by restaurants and the rich. A man with inhuman skills to capture the..."
+  },
+  {
+    "serial_no": 29,
+    "title": "Dragon Ball Kai",
+    "alternate_title": "Dragonball Kai, DBK, DB Kai, DBZ Kai ,ドラゴンボール改",
+    "url": "https://www.animegg.org/series/dragon-ball-kai",
+    "episode_count": 98,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Martial Arts",
+      "Fantasy",
+      "Super Power",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "A remastered version of Dragon Ball Z that adheres more to the manga's story. This version includes newly recorded dialog by the original voice actors, new sound effects, new OP/ED sequences, and a..."
+  },
+  {
+    "serial_no": 30,
+    "title": "Kimetsu no Yaiba",
+    "alternate_title": "Blade of Demon Destruction, Demon Slayer: Kimetsu no Yaiba",
+    "url": "https://www.animegg.org/series/kimetsu-no-yaiba",
+    "episode_count": 52,
+    "status": "Ongoing",
+    "genres": [
+      "Action",
+      "Martial Arts",
+      "Fantasy",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "Since ancient times, rumors have abounded of man-eating demons lurking in the woods. Because of this, the local townsfolk never venture outside at night. Legend has it that a demon slayer also roams..."
+  },
+  {
+    "serial_no": 31,
+    "title": "Sword Art Online",
+    "alternate_title": "word Art Online , ソードアート・オンライン",
+    "url": "https://www.animegg.org/series/sword-art-online",
+    "episode_count": 26,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Game",
+      "Shounen",
+      "Romance"
+    ],
+    "description": "The only way to escape is to 'clear' the game. Death in game means actual 'death' ----\r\nThe ten thousand who have logged onto the as of yet mysterious game 'Sword Art Online' using their Nerve Gear..."
+  },
+  {
+    "serial_no": 32,
+    "title": "One Punch Man",
+    "alternate_title": "One Punch-Man, One-Punch Man",
+    "url": "https://www.animegg.org/series/onepunch-man",
+    "episode_count": 12,
+    "status": "Ongoing",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Supernatural",
+      "Comedy",
+      "Seinen",
+      "Parody",
+      "Science Fiction"
+    ],
+    "description": "In this new action-comedy, everything about a young man named Saitama screams \"AVERAGE,\" from his lifeless expression, to his bald head, to his unimpressive physique. However, this average-looking..."
+  },
+  {
+    "serial_no": 33,
+    "title": "Death Note",
+    "alternate_title": "デスノート",
+    "url": "https://www.animegg.org/series/death-note",
+    "episode_count": 37,
+    "status": "Completed",
+    "genres": [
+      "Supernatural",
+      "Mystery",
+      "Psychological",
+      "Thriller",
+      "Police"
+    ],
+    "description": "Yagami Light is an ace student with great prospects, who's bored out of his mind. One day he finds the \"Death Note\": a notebook from the realm of the Death Gods, with the power to kill people in any..."
+  },
+  {
+    "serial_no": 34,
+    "title": "Pokemon (2019)",
+    "alternate_title": "Pocket Monsters, ポケットモンスター; Pokémon Journeys: The Series",
+    "url": "https://www.animegg.org/series/pokemon-2019",
+    "episode_count": 142,
+    "status": "Ongoing",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Comedy",
+      "Kids"
+    ],
+    "description": "The official YouTube channel for the Pokemon franchise announced on Sunday that the franchise is getting a new television anime series titled Pocket Monster. The title is the same title as the..."
+  },
+  {
+    "serial_no": 35,
+    "title": "Yu-Gi-Oh! GX",
+    "alternate_title": "Yu-Gi-Oh! Genex,Game King of Duel Monsters GX,遊戯王デュエルモンスターズＧＸ",
+    "url": "https://www.animegg.org/series/yu-gi-oh-gx",
+    "episode_count": 180,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Comedy",
+      "Game",
+      "Shounen"
+    ],
+    "description": "Ten years after the Ceremonial Battle, a teenage boy named Yuuki Judai heads off in order to join the Duelist Yousei School located on a remote island off the coast of Japan. There he meets his fellow..."
+  },
+  {
+    "serial_no": 36,
+    "title": "Sword Art Online II",
+    "alternate_title": "Phantom Bullet, SAO II, Sword Art Online 2, SAO 2, ソードアート・オンライン II",
+    "url": "https://www.animegg.org/series/sword-art-online-ii",
+    "episode_count": 25,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Game",
+      "Shounen",
+      "Romance"
+    ],
+    "description": "A year has passed since Sword Art Online (SAO) was cleared. Kirito is asked by Kikuoka to investigate Gun Gale Online, specifically Death Gun, a weapon which seemed to link deaths in the virtual..."
+  },
+  {
+    "serial_no": 37,
+    "title": "Eyeshield 21",
+    "alternate_title": "アイシールド21",
+    "url": "https://www.animegg.org/series/eyeshield-21",
+    "episode_count": 145,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Shounen",
+      "Sports"
+    ],
+    "description": "Kobayakawa Sena is a little guy who always get picked on by the bullies in school. Since elementary school, he always play the role of the 'errand boy' to the extent that he has become swift and fast..."
+  },
+  {
+    "serial_no": 38,
+    "title": "World Trigger",
+    "alternate_title": "ワールドトリガー",
+    "url": "https://www.animegg.org/series/world-trigger",
+    "episode_count": 73,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Supernatural",
+      "Shounen",
+      "School",
+      "Space"
+    ],
+    "description": "A gate to another dimension has burst open, and from it emerge gigantic invincible creatures that threaten all of humanity. Earth's only defense is a mysterious group of warriors who have co-opted the..."
+  },
+  {
+    "serial_no": 39,
+    "title": "Fairy Tail: Final Series",
+    "alternate_title": "Fairy Tail 2018, Fairy Tail Season 3, FAIRY TAIL（フェアリーテイル）",
+    "url": "https://www.animegg.org/series/fairy-tail-final-series",
+    "episode_count": 51,
+    "status": "Ongoing",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Magic",
+      "Comedy",
+      "Shounen"
+    ],
+    "description": "The final season of Fairy Tail."
+  },
+  {
+    "serial_no": 40,
+    "title": "Nanatsu no Taizai: Imashime no Fukkatsu",
+    "alternate_title": "The Seven Deadly Sins: Revival of the Commandments",
+    "url": "https://www.animegg.org/series/nanatsu-no-taizai-imashime-no-fukkatsu",
+    "episode_count": 25,
+    "status": "Ongoing",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Supernatural",
+      "Shounen"
+    ],
+    "description": "The new season in the Nanatsu no Taizai series."
+  },
+  {
+    "serial_no": 41,
+    "title": "Boku no Hero Academia",
+    "alternate_title": "My Hero Academia",
+    "url": "https://www.animegg.org/series/boku-no-hero-academia",
+    "episode_count": 13,
+    "status": "Ongoing",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Shounen",
+      "School",
+      "Superpower"
+    ],
+    "description": "What's a hero? For Izuku Midoriya, the answer to that question has always been simple: \"Everything I want to be!\" And who is the ultimate hero? Well, the legendary All Might, of course. All Might is..."
+  },
+  {
+    "serial_no": 42,
+    "title": "Boku no Hero Academia 4th Season",
+    "alternate_title": "My Hero Academia 4",
+    "url": "https://www.animegg.org/series/boku-no-hero-academia-4th-season",
+    "episode_count": 25,
+    "status": "Ongoing",
+    "genres": [
+      "Action",
+      "Super Power",
+      "Comedy",
+      "Shounen",
+      "School"
+    ],
+    "description": "Fourth season of Boku no Hero Academia."
+  },
+  {
+    "serial_no": 43,
+    "title": "Hajime No Ippo",
+    "alternate_title": "Fighting Spirit, The First Step, Hajime no Ippo: The Fighting, はじめの一歩 THE FIGHTING!",
+    "url": "https://www.animegg.org/series/hajime-no-ippo",
+    "episode_count": 76,
+    "status": "Completed",
+    "genres": [
+      "Drama",
+      "Comedy",
+      "Shounen",
+      "Sports"
+    ],
+    "description": "Makunouchi Ippo is an ordinary high school student in Japan. Since he spends most of his time away from school helping his mother run the family business, he doesn't get to enjoy his younger years..."
+  },
+  {
+    "serial_no": 44,
+    "title": "Keroro Gunso",
+    "alternate_title": "gt. Frog,Sergeant Frog, ケロロ軍曹",
+    "url": "https://www.animegg.org/series/keroro-gunso",
+    "episode_count": 358,
+    "status": "Completed",
+    "genres": [
+      "Comedy",
+      "Shounen",
+      "Aliens",
+      "Slapstick"
+    ],
+    "description": "Keroro is a frog-like alien sent from his home planet on a mission to conquer Earth. But when his cover is blown, his battalion abandons him and he ends up in the home of the Hinata family. There, he..."
+  },
+  {
+    "serial_no": 45,
+    "title": "Pokemon Diamond and Pearl",
+    "alternate_title": "Pocket Monsters: Diamond & Pearl, Diamond and Pearl, DP: Battle Dimension, DP: Galactic Battles, DP: Sinnoh League Victors ,ポケットモンスター ダイヤモンド&パール",
+    "url": "https://www.animegg.org/series/pokemon-diamond-and-pearl",
+    "episode_count": 188,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Anthropomorphism",
+      "Proxy Battles"
+    ],
+    "description": "Dawn is a 10 year old girl living in the region of Sinnoh, aspiring to become a Pokemon Coordinator. She starts by heading towards the Pokémon Laboratory in Sandgem Town on her bike to get her starter..."
+  },
+  {
+    "serial_no": 46,
+    "title": "Ranma 1/2",
+    "alternate_title": "Ranma 1/2, Ranma ½ Nettou Hen, らんま1/2",
+    "url": "https://www.animegg.org/series/ranma-12",
+    "episode_count": 161,
+    "status": "Completed",
+    "genres": [
+      "Martial Arts",
+      "Fantasy",
+      "Comedy",
+      "Slice of Life"
+    ],
+    "description": "Saotome Ranma, a teenage martial artist, and his father Genma travel to the 'cursed training ground' of Jusenkyo in China. There, despite the warnings of the Chinese guard, they fall into the cursed..."
+  },
+  {
+    "serial_no": 47,
+    "title": "Rurouni Kenshin",
+    "alternate_title": "amurai X ， るろうに剣心 -明治剣客浪漫譚-",
+    "url": "https://www.animegg.org/series/rurouni-kenshin",
+    "episode_count": 95,
+    "status": "Completed",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Historical",
+      "Romance",
+      "Samurai"
+    ],
+    "description": "Himura Kenshin is a vagabond with a dark past and sunny disposition. Not a ronin but a rurouni, he was never a samurai, but an assassin of utmost skill in the Meiji restoration, who in the turning..."
+  },
+  {
+    "serial_no": 48,
+    "title": "Mahouka Koukou no Rettousei",
+    "alternate_title": "The Irregular at Magic High School, 魔法科高校の劣等生",
+    "url": "https://www.animegg.org/series/hte-irrefular-at-magic-high-school",
+    "episode_count": 26,
+    "status": "Completed",
+    "genres": [
+      "Sci-Fi",
+      "Magic",
+      "Supernatural",
+      "Shounen",
+      "School",
+      "Romance"
+    ],
+    "description": "Magic is a product of neither legends nor fairy tales, but instead has become a technology of reality since a time unknown to people. Supernatural power became a technology systematized through magic..."
+  },
+  {
+    "serial_no": 49,
+    "title": "Jujutsu Kaisen (TV)",
+    "alternate_title": "orcery Fight",
+    "url": "https://www.animegg.org/series/jujutsu-kaisen-tv",
+    "episode_count": 24,
+    "status": "Ongoing",
+    "genres": [
+      "Action",
+      "Demons",
+      "Supernatural",
+      "Shounen",
+      "School",
+      "Horror"
+    ],
+    "description": "In a world where demons feed on unsuspecting humans, fragments of the legendary and feared demon Ryoumen Sukuna were lost and scattered about. Should any demon consume Sukuna's body parts, the power..."
+  },
+  {
+    "serial_no": 50,
+    "title": "Shokugeki no Souma",
+    "alternate_title": "Food Wars! Shokugeki no Soma, 食戟のソーマ",
+    "url": "https://www.animegg.org/series/shokugeki-no-souma",
+    "episode_count": 24,
+    "status": "Completed",
+    "genres": [
+      "Ecchi",
+      "Shounen",
+      "School"
+    ],
+    "description": "Yukihira Souma's dream is to become a full-time chef in his father's restaurant and surpass his father's culinary skill. But just as Yukihira graduates from middle schools his father, Yukihira..."
+  }
+]
