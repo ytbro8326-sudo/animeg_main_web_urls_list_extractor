@@ -37,7 +37,7 @@ jobs:
       - name: Connectivity check
         run: |
           echo "=== curl animegg.org/popular-series (first 3000 chars) ==="
-          curl -sL \
+          curl -sL --compressed \
             -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36" \
             -H "Accept: text/html" \
             -H "Accept-Language: en-US,en;q=0.9" \
@@ -45,7 +45,7 @@ jobs:
             | head -c 3000
           echo ""
           echo "=== HTTP status ==="
-          curl -o /dev/null -s -w "%{http_code}" \
+          curl -o /dev/null -s -w "%{http_code}" --compressed \
             -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36" \
             "https://www.animegg.org/popular-series?sortBy=hits&sortDirection=DESC&limit=5&start=0"
           echo ""
