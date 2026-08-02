@@ -4,17 +4,14 @@ animegg.org Scraper — GitHub Actions Edition
 Phase 1 → animegg_url_list.json          (committed once, at end of phase 1)
 Phase 2 → animegg_with_alternate_titles.json  (committed every 50 entries)
 
-Both files are committed and pushed directly to the repo that triggered
-this Actions run. No secrets needed beyond the default GITHUB_TOKEN.
-
-Resume support: re-running the workflow skips already-done entries in
-both phases, so it's safe to re-trigger after a timeout.
+Resume support: re-running the workflow skips already-done entries.
 """
 
 import json
 import os
 import re
 import subprocess
+import sys
 import time
 import requests
 from bs4 import BeautifulSoup
@@ -24,67 +21,63 @@ from bs4 import BeautifulSoup
 BASE_URL        = "https://www.animegg.org"
 SERIES_LIST_URL = f"{BASE_URL}/popular-series"
 
-FILE_PHASE1 = "animegg_url_list.json"
-FILE_PHASE2 = "animegg_with_alternate_titles.json"
+FILE_PHASE1  = "animegg_url_list.json"
+FILE_PHASE2  = "animegg_with_alternate_titles.json"
 
-CHUNK_SIZE      = 1000   # series per list-page request
-LIST_DELAY      = 1.5    # seconds between list-page requests
-DETAIL_DELAY    = 0.5    # seconds between detail-page requests
-COMMIT_EVERY    = 50     # commit phase-2 file every N new entries
-MAX_SERIES      = None   # None = all; set int to cap for testing
+CHUNK_SIZE    = 1000
+LIST_DELAY    = 2.0
+DETAIL_DELAY  = 0.8
+COMMIT_EVERY  = 50
+MAX_SERIES    = None   # None = all
 
-BROWSER_HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/150.0.0.0 Safari/537.36"
-    ),
-    "Accept": (
-        "text/html,application/xhtml+xml,application/xml;"
-        "q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8"
-    ),
-    "Accept-Language": "en-US,en;q=0.9",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Upgrade-Insecure-Requests": "1",
-}
+# Rotate through a few common UA strings to avoid trivial UA blocks
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0",
+]
+
+def browser_headers(ua_index: int = 0) -> dict:
+    return {
+        "User-Agent":                USER_AGENTS[ua_index % len(USER_AGENTS)],
+        "Accept":                    "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language":           "en-US,en;q=0.9",
+        "Accept-Encoding":           "gzip, deflate, br",
+        "Connection":                "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+        "Sec-Fetch-Dest":            "document",
+        "Sec-Fetch-Mode":            "navigate",
+        "Sec-Fetch-Site":            "none",
+        "Sec-Fetch-User":            "?1",
+        "Cache-Control":             "max-age=0",
+    }
 
 # ─── Git helpers ──────────────────────────────────────────────────────────────
 
 def git(*args: str) -> str:
-    """Run a git command, return stdout, print stderr on failure."""
-    result = subprocess.run(
-        ["git", *args],
-        capture_output=True, text=True
-    )
+    result = subprocess.run(["git", *args], capture_output=True, text=True)
     if result.returncode != 0:
-        print(f"  [git {' '.join(args)}] stderr: {result.stderr.strip()}")
+        print(f"  [git {' '.join(args)}] {result.stderr.strip()}")
     return result.stdout.strip()
 
 
 def git_commit_and_push(files: list[str], message: str) -> None:
-    """Stage given files, commit if there are changes, then push."""
     git("add", *files)
-    # Check if there's anything staged
-    status = git("diff", "--cached", "--name-only")
-    if not status:
+    if not git("diff", "--cached", "--name-only"):
         print(f"  [git] Nothing new to commit.")
         return
     git("commit", "-m", message)
-    # Pull with rebase first to avoid diverged-branch push failures
     git("pull", "--rebase", "origin", git("rev-parse", "--abbrev-ref", "HEAD"))
-    result = subprocess.run(
-        ["git", "push"],
-        capture_output=True, text=True
-    )
+    result = subprocess.run(["git", "push"], capture_output=True, text=True)
     if result.returncode == 0:
-        print(f"  [git] Pushed: {message}")
+        print(f"  [git] ✓ Pushed: {message}")
     else:
         print(f"  [git] Push failed: {result.stderr.strip()}")
 
 # ─── JSON helpers ─────────────────────────────────────────────────────────────
 
 def save_json(data: list[dict], path: str) -> None:
-    """Atomic write — tmp file then rename so no partial writes."""
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
@@ -97,6 +90,18 @@ def load_json(path: str) -> list[dict]:
             return json.load(f)
     except Exception:
         return []
+
+# ─── Debug: print what the site actually returned ────────────────────────────
+
+def debug_response(resp: requests.Response, label: str = "") -> None:
+    print(f"\n{'─'*60}")
+    print(f"DEBUG {label}")
+    print(f"  Status  : {resp.status_code}")
+    print(f"  URL     : {resp.url}")
+    print(f"  Headers : {dict(list(resp.headers.items())[:8])}")
+    body = resp.text[:2000]
+    print(f"  Body[:2000]:\n{body}")
+    print(f"{'─'*60}\n")
 
 # ─── Phase 1 — List scraper ───────────────────────────────────────────────────
 
@@ -155,8 +160,27 @@ def parse_series_page(html: str) -> list[dict]:
     return results
 
 
+def fetch_list_page(session: requests.Session, start: int, limit: int, ua_index: int) -> requests.Response:
+    """
+    Try fetching the list page. Attempts two URL styles:
+      1. Query-string params  (?sortBy=hits&...)
+      2. No params            (plain /popular-series)  — fallback
+    """
+    headers = browser_headers(ua_index)
+
+    # Attempt 1 — with query params
+    params = {
+        "sortBy": "hits",
+        "sortDirection": "DESC",
+        "limit": limit,
+        "start": start,
+    }
+    resp = session.get(SERIES_LIST_URL, params=params, headers=headers, timeout=30)
+    resp.raise_for_status()
+    return resp
+
+
 def phase1(session: requests.Session) -> list[dict]:
-    # Resume: if file already exists and is complete, skip entirely
     existing = load_json(FILE_PHASE1)
     if existing:
         print(f"[Phase 1] Already complete — {len(existing)} series in {FILE_PHASE1}, skipping.")
@@ -167,8 +191,18 @@ def phase1(session: requests.Session) -> list[dict]:
 
     output:    list[dict] = []
     seen_uris: set[str]   = set()
-    start = 0
-    page  = 1
+    start   = 0
+    page    = 1
+    ua_idx  = 0
+
+    # ── Warm-up: hit homepage first to get cookies ───────────────────────────
+    print("  Warming up (homepage) ...", end=" ", flush=True)
+    try:
+        resp = session.get(BASE_URL + "/", headers=browser_headers(0), timeout=20)
+        print(f"status {resp.status_code}")
+        time.sleep(2)
+    except Exception as e:
+        print(f"warning: {e}")
 
     while True:
         limit = CHUNK_SIZE
@@ -181,19 +215,33 @@ def phase1(session: requests.Session) -> list[dict]:
         print(f"  Page {page} | start={start} limit={limit} ...", end=" ", flush=True)
 
         try:
-            params = {
-                "sortBy": "hits", "sortDirection": "DESC",
-                "limit": limit, "start": start,
-            }
-            resp = session.get(
-                SERIES_LIST_URL, params=params,
-                headers=BROWSER_HEADERS, timeout=30,
-            )
-            resp.raise_for_status()
+            resp  = fetch_list_page(session, start, limit, ua_idx)
             chunk = parse_series_page(resp.text)
+            ua_idx += 1
         except Exception as e:
             print(f"Error: {e}")
+            # Print debug info so we can see what the server returned
+            try:
+                debug_response(resp, f"page {page}")
+            except Exception:
+                pass
             break
+
+        # ── Debug: if first page returns nothing, show raw HTML ──────────────
+        if page == 1 and not chunk:
+            debug_response(resp, "page 1 — NO li.fea FOUND")
+            # Try without query params as fallback
+            print("  Retrying page 1 without query params ...", end=" ", flush=True)
+            try:
+                resp2  = session.get(SERIES_LIST_URL, headers=browser_headers(1), timeout=30)
+                chunk2 = parse_series_page(resp2.text)
+                print(f"got {len(chunk2)} (no-params fallback)")
+                if chunk2:
+                    chunk = chunk2
+                else:
+                    debug_response(resp2, "page 1 no-params fallback — ALSO EMPTY")
+            except Exception as e2:
+                print(f"fallback error: {e2}")
 
         if not chunk:
             print("No results — done.")
@@ -218,11 +266,18 @@ def phase1(session: requests.Session) -> list[dict]:
             print("  Reached end of results.")
             break
 
-        start += len(chunk)
-        page  += 1
+        start  += len(chunk)
+        page   += 1
         time.sleep(LIST_DELAY)
 
-    # Save + commit phase 1
+    if not output:
+        print("\n[Phase 1] ERROR: 0 series scraped. Check DEBUG output above.")
+        print("  Possible causes:")
+        print("  - Site returned a bot-check / Cloudflare page")
+        print("  - HTML structure changed (li.fea no longer exists)")
+        print("  - Network blocked at Actions IP")
+        sys.exit(1)
+
     save_json(output, FILE_PHASE1)
     git_commit_and_push(
         [FILE_PHASE1],
@@ -306,13 +361,11 @@ def extract_alternate_title(soup: BeautifulSoup) -> str:
 
 
 def phase2(session: requests.Session, phase1_data: list[dict]) -> None:
-    # Load existing progress
-    existing   = load_json(FILE_PHASE2)
-    done_urls  = {r["url"] for r in existing}
-    output     = list(existing)
-
-    todo = [r for r in phase1_data if r["url"] not in done_urls]
-    total = len(phase1_data)
+    existing  = load_json(FILE_PHASE2)
+    done_urls = {r["url"] for r in existing}
+    output    = list(existing)
+    todo      = [r for r in phase1_data if r["url"] not in done_urls]
+    total     = len(phase1_data)
 
     if existing:
         print(f"[Phase 2] Resuming — {len(existing)}/{total} done, {len(todo)} remaining.")
@@ -320,13 +373,17 @@ def phase2(session: requests.Session, phase1_data: list[dict]) -> None:
         print(f"[Phase 2] Fetching alternate titles for {total} series.")
     print("─" * 65)
 
-    since_last_commit = 0   # count new entries since last git commit
+    since_last_commit = 0
+    ua_idx = 0
 
     for s in todo:
         try:
-            resp = session.get(s["url"], headers=BROWSER_HEADERS, timeout=20)
+            resp = session.get(
+                s["url"], headers=browser_headers(ua_idx), timeout=20
+            )
             resp.raise_for_status()
             alt = extract_alternate_title(BeautifulSoup(resp.text, "html.parser"))
+            ua_idx += 1
         except Exception:
             alt = ""
 
@@ -346,14 +403,13 @@ def phase2(session: requests.Session, phase1_data: list[dict]) -> None:
         since_last_commit += 1
         done_count = len(output)
 
-        alt_display = f" → {alt[:40]}" if alt else ""
         print(
             f"  [{done_count:>5}/{total}] {'✓' if alt else '·'} "
-            f"{s['title'][:48]}{alt_display}",
+            f"{s['title'][:48]}"
+            + (f" → {alt[:40]}" if alt else ""),
             flush=True,
         )
 
-        # Commit every COMMIT_EVERY new entries
         if since_last_commit >= COMMIT_EVERY:
             git_commit_and_push(
                 [FILE_PHASE2],
@@ -363,7 +419,6 @@ def phase2(session: requests.Session, phase1_data: list[dict]) -> None:
 
         time.sleep(DETAIL_DELAY)
 
-    # Final commit for any remainder
     if since_last_commit > 0:
         git_commit_and_push(
             [FILE_PHASE2],
@@ -377,12 +432,6 @@ def phase2(session: requests.Session, phase1_data: list[dict]) -> None:
 
 def main():
     session = requests.Session()
-    try:
-        session.get(BASE_URL + "/", headers=BROWSER_HEADERS, timeout=15)
-        time.sleep(LIST_DELAY)
-    except Exception:
-        pass
-
     p1_data = phase1(session)
     phase2(session, p1_data)
 
